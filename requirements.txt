@@ -1,0 +1,2 @@
+tensorboard==2.8.0
+ipython==8.1.1
