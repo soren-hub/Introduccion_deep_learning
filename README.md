@@ -15,6 +15,11 @@ Para desactivar el ambiente virtual:
 
 >>deactivate
 
+Podemos descargar el codigo del curso con el siguiente comando (se debe tener git instalado): 
+Abrimos git y ejetamos:
+
+>>git clone https://github.com/soren-hub/Introduccion_deep_learning.git
+
 Una vez dentro del ambiente virtual, podemos instalar las librerias necesarias:
 **En el caso de tensorflow y pytorch, para poder ocupar la gpu, primero debemos instalar cuda, de manera opcional cudnn(numpy con esteroides).**
 Para instalar tensorflow, keras y jupyter:
@@ -49,5 +54,20 @@ Para comparar las ventajas de ocupar la gpu, podemos usar el siguiente comando e
 
 Nota: Si se corre el codigo por primera vez puede que la cpu corra más rapido debido a que no se ha inicializado la gpu.
 Pero una vez que la gpu este bien iniciada, el codigo se ejecutará mas rapido.
+
+El codigo correspondiente a la libreria pytorch estara en la rama "translate-torch", para ver este codigo dentro de la carpeta descargada al hacer el git clone, tenemos que abrir git y ejecutar:
+
+>>git checkout translate-torch
+
+Ahora si abrimos cualquier archivo de jupyter podemos ver el codigo implementado en pytorch:
+**ESTO AUN ESTA EN DESARROLLO**
+
+Para regresar a la version del codigo en tensorflow, tenemos que ejecutar:
+
+>>git checkout main 
+
+
+
+
 
 
