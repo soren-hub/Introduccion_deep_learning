@@ -34,3 +34,20 @@ tensorflow:
 pytorch:
 >>import torch
 >>torch.cuda.is_available()
+
+Para comparar las ventajas de ocupar la gpu, podemos usar el siguiente comando en jupyter:
+
+>>import torch
+>>dev = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
+#con cpu
+>>%%time
+>>torch.rand(100000000)
+
+#con gpu
+>>%%time
+>>torch.rand(100000000,device=dev)
+
+Nota: Si se corre el codigo por primera vez puede que la cpu corra más rapido debido a que no se ha inicializado la gpu.
+Pero una vez que la gpu este bien iniciada, el codigo se ejecutará mas rapido.
+
+
